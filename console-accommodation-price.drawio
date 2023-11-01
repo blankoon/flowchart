@@ -1,0 +1,125 @@
+<mxfile host="app.diagrams.net" modified="2023-11-01T01:56:25.183Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="uORq9MPmBEgbqiuFtBHz" version="22.0.8" type="github">
+  <diagram name="페이지-1" id="aA-GUddAUT5FaDBkeeAq">
+    <mxGraphModel dx="2046" dy="790" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="1Y6GScx64tIBPIE060Nu-1" value="«interface»&lt;br&gt;&lt;b&gt;RequestBodyPost/PutAccommodation (1차)&lt;br&gt;숙소 등록/수정&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;step&lt;/b&gt;:&amp;nbsp;AccommodationRegisterStepType.&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;MIGRATION_PRICE_SECTION&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;accommodation_id&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;default_price&lt;/b&gt;: Price (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;tmp_default_price_amount&lt;/b&gt;: number (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;price_sections&lt;/b&gt;: PriceSection[] (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;period_prices&lt;/b&gt;: P&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;eriodPrices[] (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;period_discount_rates&lt;/b&gt;: P&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;eriodDiscountRates[] (optional)&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="2070" width="430" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-3" value="«interface»&lt;br&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;RequestBodyPost/PutAccommodation&lt;/b&gt;&lt;b&gt;&amp;nbsp;(2차)&lt;br&gt;숙소 등록/수정&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;step&lt;/b&gt;:&amp;nbsp;AccommodationRegisterStepType.&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;PRICE_SECTION&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;accommodation_id&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;default_price&lt;/b&gt;: Price (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;price_sections&lt;/b&gt;: PriceSection[] (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;period_prices&lt;/b&gt;: P&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;eriodPrices[] (optional)&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;period_discount_rates&lt;/b&gt;: P&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;eriodDiscountRates[] (optional)&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillStyle=auto;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="2300" width="430" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-4" value="«interface»&lt;br&gt;&lt;b&gt;PriceSection&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;start_day&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;end_day&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;variation_rate&lt;/b&gt;: number | null&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;day_price&lt;/b&gt;: Price | null&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillStyle=auto;" parent="1" vertex="1">
+          <mxGeometry x="-510" y="1920" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-5" value="«interface»&lt;br&gt;&lt;b&gt;PeriodPrice&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;start_date&lt;/b&gt;: DateInfo&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;end_date&lt;/b&gt;: DateInfo&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;price&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: Price&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillStyle=auto;" parent="1" vertex="1">
+          <mxGeometry x="-510" y="2050" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-6" value="«interface»&lt;br&gt;&lt;b&gt;PeriodDiscountRate&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;start_date&lt;/b&gt;: DateInfo&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;end_date&lt;/b&gt;: DateInfo&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;discount_rate&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillStyle=auto;" parent="1" vertex="1">
+          <mxGeometry x="-510" y="2190" width="180" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-7" value="«interface»&lt;br&gt;&lt;b&gt;DateInfo&lt;/b&gt;&lt;br&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;year&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;month&lt;/b&gt;: number&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: initial;&quot;&gt;date&lt;/b&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;: number&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;fillStyle=auto;" parent="1" vertex="1">
+          <mxGeometry x="-700" y="2050" width="180" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-8" value="«interface»&lt;br&gt;&lt;b&gt;RequestParamGetAccommodationPriceInformation&lt;br&gt;숙소 요금 정보 조회 (기간 할인, 성수기)&lt;br&gt;&lt;br&gt;&lt;/b&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&lt;b&gt;accommodation_id&lt;/b&gt;: number&lt;br&gt;&lt;/span&gt;&lt;/div&gt;" style="html=1;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="1920" width="430" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-9" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;usePriceStepState (1차)&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ accommodationIdFromBasicStepState: number&lt;br&gt;+ accommodationIdFromPriceStepState: number&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+&amp;nbsp;accommodationIdFromSellingPeriodStepState: number&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ moveToPrevStep: () =&amp;gt; void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ moveToNextStep: () =&amp;gt; void&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="1610" width="390" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-10" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" parent="1Y6GScx64tIBPIE060Nu-9" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-13" value="&lt;p style=&quot;margin:0px;margin-top:6px;text-align:center;&quot;&gt;&lt;b&gt;usePriceStepState (2차)&lt;/b&gt;&lt;/p&gt;&lt;hr&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;+&amp;nbsp;accommodationIdFromSellingPeriodStepState: number (optional)&lt;/span&gt;&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ moveToPrevStep: () =&amp;gt; void&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:8px;&quot;&gt;+ moveToNextStep: () =&amp;gt; void&lt;/p&gt;" style="align=left;overflow=fill;html=1;dropTarget=0;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-210" y="1750" width="390" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-14" value="" style="shape=component;jettyWidth=8;jettyHeight=4;" parent="1Y6GScx64tIBPIE060Nu-13" vertex="1">
+          <mxGeometry x="1" width="20" height="20" relative="1" as="geometry">
+            <mxPoint x="-24" y="4" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-13" target="1Y6GScx64tIBPIE060Nu-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-17" target="1Y6GScx64tIBPIE060Nu-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-580" y="640" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-42" value="신규 등록" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1Y6GScx64tIBPIE060Nu-37" vertex="1" connectable="0">
+          <mxGeometry x="-0.5371" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-17" value="신규 등록? 수정?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="500" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-29" value="숙소 요금 설정" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_2;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="360" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-32" value="저장" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="920" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="1Y6GScx64tIBPIE060Nu-34" target="1Y6GScx64tIBPIE060Nu-35" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-750" y="680" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-34" value="피드백 UI 노출&lt;br&gt;(alert, error highlighting)" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" parent="1" vertex="1">
+          <mxGeometry x="-800" y="700" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-35" value="요금 입력" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="640" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-29" target="1Y6GScx64tIBPIE060Nu-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-45" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-40" target="1Y6GScx64tIBPIE060Nu-44" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-40" value="기존 요금 조회" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+          <mxGeometry x="-485" y="520" width="110" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.091;entryY=0.429;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-17" target="1Y6GScx64tIBPIE060Nu-40" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-43" value="수정" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="1Y6GScx64tIBPIE060Nu-41" vertex="1" connectable="0">
+          <mxGeometry x="-0.4637" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-44" value="요금 수정" style="html=1;strokeWidth=2;shape=manualInput;whiteSpace=wrap;rounded=1;size=26;arcSize=11;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+          <mxGeometry x="-480" y="640" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-47" target="1Y6GScx64tIBPIE060Nu-34" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="C0t2VVDVcqLf0LZBvdlh-3" value="실패" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="1Y6GScx64tIBPIE060Nu-52">
+          <mxGeometry x="-0.18" y="-6" relative="1" as="geometry">
+            <mxPoint x="1" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-47" value="저장 성공?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" parent="1" vertex="1">
+          <mxGeometry x="-630" y="780" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-35" target="1Y6GScx64tIBPIE060Nu-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-50" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-44" target="1Y6GScx64tIBPIE060Nu-47" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-51" value="성공" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="1Y6GScx64tIBPIE060Nu-47" target="1Y6GScx64tIBPIE060Nu-32" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="1Y6GScx64tIBPIE060Nu-60" value="archieve" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;" parent="1" vertex="1">
+          <mxGeometry x="-760" y="1570" width="1060" height="950" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
